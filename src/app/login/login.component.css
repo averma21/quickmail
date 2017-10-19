@@ -1,0 +1,15 @@
+.login-card {
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+mat-form-field {
+    width: 100%;
+}

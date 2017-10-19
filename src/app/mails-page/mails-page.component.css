@@ -1,0 +1,21 @@
+.qm-mails-page-layout {
+    width: 100%;
+}
+
+.qm-left-col {
+    width: 15%;
+    display: inline-block;
+}
+
+.qm-right-col {
+    width: 84%;
+    display: inline-block;
+}
+
+.qm-top-section {
+    padding-left: 16px;
+}
+
+.qm-search {
+    width: 40%;
+}

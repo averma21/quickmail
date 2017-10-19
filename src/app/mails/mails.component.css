@@ -1,0 +1,42 @@
+.qm-mails-heading {
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
+    padding-left: 16px;
+}
+
+.qm-mails-action {
+    min-width: 75px;
+}
+
+.mail-min[aria-selected=true] {
+    background-color: #eeeeee;
+}
+
+.qm-sender {
+    font-weight: bold;
+    width: 20%;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    font-size: 0.90rem;
+}
+
+.qm-subject {    
+    font-weight: bold;
+    width: 80%;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    font-size: 0.90rem;
+}
+
+
+.qm-content {
+    width: 90%;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.85rem;
+}

@@ -1,0 +1,33 @@
+<mat-grid-list cols="12" rowHeight="50px">
+  <mat-grid-tile [colspan]="9">
+    <div class="qm-mails-heading">Mails</div>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="3">
+    <div class="button-row">
+      <button mat-raised-button class="qm-mails-action">
+        <mat-icon>folder</mat-icon>
+      </button>
+      <button mat-raised-button class="qm-mails-action">
+        <mat-icon>error</mat-icon>
+      </button>
+      <button mat-raised-button class="qm-mails-action">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+<mat-selection-list class="qm-mails-container">
+  <mat-list-option *ngFor="let mail of mails" class="mail-min">
+    <h3 matLine>
+      <span class="qm-sender">
+        {{mail.getSender()}}
+      </span>
+      <span class="qm-subject">
+        {{mail.getSubject()}}
+      </span>
+    </h3>
+    <p matline>
+      <span class="qm-content">{{mail.getContent()}}</span>
+    </p>
+  </mat-list-option>
+</mat-selection-list>
