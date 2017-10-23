@@ -3,6 +3,11 @@
     text-align: left;
     width: 100%;
     padding-left: 16px;
+    color: #ffffff;
+}
+
+.qm-mails-container {
+    border-top: 0.0015rem solid #ffffff;
 }
 
 .qm-mails-action {
@@ -11,6 +16,11 @@
 
 .mail-min[aria-selected=true] {
     background-color: #eeeeee;
+}
+
+.mail-min {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-bottom: 0.0015rem solid #efefef;
 }
 
 .qm-sender {

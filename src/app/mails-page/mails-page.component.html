@@ -1,15 +1,68 @@
 <div class="qm-mails-page-layout">
-  <div class="qm-left-col">
-    <div>Options</div>
-    <div>Contacts</div>
-  </div>
-  <div class="qm-right-col">
-    <div class="qm-top-section">
-      <mat-form-field class="qm-search">
-        <input matInput placeholder="Search">
-      </mat-form-field>
-      <button mat-raised-button color="primary">Search</button>
+  <div class="qm-top-row">
+    <div class="qm-left-col">
+      <img src="/assets/images/logo.png" width="90%">
     </div>
+    <div class="qm-right-col">
+      <div class="qm-search">
+        <input class="qm-search-input" placeholder="Search">
+        <button mat-raised-button color="primary" class="search-button">Search</button>
+      </div>
+    </div>
+  </div>
+  <div class="qm-left-col qm-full-height">
+    <mat-nav-list dense>
+      <mat-list-item>
+        <button mat-raised-button color="primary" class="qm-compose-button">Compose</button>
+      </mat-list-item>
+      <mat-divider class="qm-divider"></mat-divider>
+      <a mat-list-item href="#" class="qm-mailbox-label">Inbox</a>
+      <a mat-list-item href="#" class="qm-mailbox-label">Sent</a>
+      <a mat-list-item href="#" class="qm-mailbox-label">Trash</a>
+    </mat-nav-list>
+    <div class="qm-divider"></div>
+    <button mat-button class="qm-chat-settings qm-text-white qm-text-bold">
+      Amrit Verma&nbsp;
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+    <div class="qm-divider"></div>
+    <mat-nav-list dense>
+      <mat-list-item class="qm-text-white">
+        <a matLine href="#">John Doe</a>
+        <button mat-icon-button>
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-list-item class="qm-text-white">
+        <a matLine href="#">Alex K</a>
+        <button mat-icon-button>
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-list-item class="qm-text-white">
+        <a matLine href="#">Alicia S</a>
+        <button mat-icon-button>
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-nav-list>
+  </div>
+  <div class="qm-right-col qm-full-height">
     <mails></mails>
+    <mat-grid-list cols="3" rowHeight="30px" class="qm-metadata">
+      <mat-grid-tile>
+        <div class="qm-text-left qm-full-width qm-text-white">
+          0.252 GB of 10GB used
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <a class="qm-text-white">Terms & Privacy</a>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="qm-text-right qm-full-width qm-text-white">
+          Last account activity: 20 minutes ago
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
   </div>
 </div>

@@ -2,10 +2,40 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
 }
 
 body {
     overflow: hidden;
+    margin: 0;
+    height: 100%;
+}
+
+.qm-text-left {
+    text-align: left;
+}
+
+.qm-text-right {
+    text-align: right;
+}
+
+.qm-full-width {
+    width: 100%;
+}
+
+.qm-full-height {
+    height: 100%;
+}
+
+.qm-text-white {
+    color: white !important;
+}
+
+.qm-text-bold {
+    font-weight: bold;
 }
