@@ -1,0 +1,54 @@
+<div class="qm-compose-mail-box" *ngIf="show">
+  <div class="qm-header">
+    <mat-grid-list cols="20" rowHeight="30px">
+      <mat-grid-tile [colspan]="19">
+        <div class="qm-full-width qm-text-left">
+          Compose Mail
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="1">
+        <button mat-icon-button (click)="destroy()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <form class="qm-compose-mail-form">
+    <div class="qm-form-fieldwrapper">
+      <compose-mail-to-field></compose-mail-to-field>
+    </div>
+    <div class="qm-divider"></div>
+    <div class="qm-form-fieldwrapper">
+      <input class="qm-noborder qm-subject" placeholder="Subject">
+    </div>
+    <div class="qm-divider"></div>
+    <div class="qm-form-fieldwrapper">
+      <textarea class="qm-content qm-noborder"></textarea>
+    </div>
+    <div class="qm-bottom-bar">
+      <mat-grid-list cols="12" rowHeight="40px">
+        <mat-grid-tile [colspan]="2">
+          <button mat-raised-button color="primary" class="send-button">Send</button>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="9">
+          <div class="button-row qm-content-action-container">
+            <button mat-icon-button>
+              <mat-icon>text_format</mat-icon>
+            </button>
+            <button mat-icon-button>
+              <mat-icon>link</mat-icon>
+            </button>
+            <button mat-icon-button>
+              <mat-icon>insert_photo</mat-icon>
+            </button>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1">
+          <button mat-icon-button>
+            <mat-icon>delete</mat-icon>
+          </button>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </form>
+</div>

@@ -63,12 +63,7 @@
 
 .qm-search-input {
     width: 82%;
-    border: 0;
     padding: 10px;
-}
-
-.qm-search-input:focus {
-    outline: none;
 }
 
 .search-button {

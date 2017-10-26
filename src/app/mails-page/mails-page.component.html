@@ -5,7 +5,7 @@
     </div>
     <div class="qm-right-col">
       <div class="qm-search">
-        <input class="qm-search-input" placeholder="Search">
+        <input class="qm-search-input qm-noborder" placeholder="Search">
         <button mat-raised-button color="primary" class="search-button">Search</button>
       </div>
     </div>
@@ -13,7 +13,11 @@
   <div class="qm-left-col qm-full-height">
     <mat-nav-list dense>
       <mat-list-item>
-        <button mat-raised-button color="primary" class="qm-compose-button">Compose</button>
+        <a mat-raised-button class="qm-compose-button"
+          [routerLink]="[currentURL]"
+          [queryParams]="{cm:true}">
+          Compose
+        </a>
       </mat-list-item>
       <mat-divider class="qm-divider"></mat-divider>
       <a mat-list-item href="#" class="qm-mailbox-label">Inbox</a>
@@ -48,7 +52,7 @@
     </mat-nav-list>
   </div>
   <div class="qm-right-col qm-full-height">
-    <mails></mails>
+    <router-outlet></router-outlet>
     <mat-grid-list cols="3" rowHeight="30px" class="qm-metadata">
       <mat-grid-tile>
         <div class="qm-text-left qm-full-width qm-text-white">
@@ -64,5 +68,6 @@
         </div>
       </mat-grid-tile>
     </mat-grid-list>
+    <compose-mail></compose-mail>
   </div>
 </div>

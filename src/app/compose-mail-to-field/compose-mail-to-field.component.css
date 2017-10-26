@@ -1,0 +1,10 @@
+.qm-to-input-wrapper {
+    display: inline-block;
+    width: 85%;
+}
+
+.qm-to-additinal-buttons {
+    display: inline-block;
+    width: 10%;
+    text-align: right;
+}

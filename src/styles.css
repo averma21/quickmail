@@ -39,3 +39,11 @@ body {
 .qm-text-bold {
     font-weight: bold;
 }
+
+.qm-noborder {
+    border: 0;
+}
+
+.qm-noborder:focus {
+    outline: none;
+}

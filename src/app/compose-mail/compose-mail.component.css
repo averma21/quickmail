@@ -1,0 +1,50 @@
+.qm-compose-mail-box {
+    position: absolute;
+    width: 50%;
+    right: 10px;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+.qm-header {
+    padding: 8px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    background-color: #444444;
+    color: #ffffff;
+}
+
+.qm-header mat-icon {
+    font-size: 1.25rem;
+}
+
+.qm-form-fieldwrapper {
+    padding: 8px;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+.qm-subject {
+    width: 100%;
+}
+
+.qm-content {
+    width: 100%;
+    height: 280px;
+    resize: none;
+}
+
+.qm-divider {
+    border-top: 0.0625rem solid #dedede;
+}
+
+.qm-bottom-bar {
+    padding: 5px;
+    background-color: #efefef;
+}
+
+.qm-content-action-container {
+    width: 100%;
+    text-align: left;
+}
